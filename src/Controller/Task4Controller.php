@@ -10,7 +10,7 @@ use function method_exists;
 class Task4Controller extends AbstractController {
 
   /**
-   * @Route("/task-4/{method}", name="task4")
+   * @Route("/json/task-4/{method}", name="task4")
    */
   public function index($method) {
     $result = NULL;

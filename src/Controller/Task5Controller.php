@@ -10,7 +10,7 @@ class Task5Controller extends AbstractController {
   use RenderTableTrait;
 
   /**
-   * @Route("/task-5/product", name="task5_product")
+   * @Route("/json/task-5/product", name="task5_product")
    */
   public function product() {
     /** @var $connection \Doctrine\DBAL\Connection */
@@ -30,7 +30,7 @@ class Task5Controller extends AbstractController {
   }
 
   /**
-   * @Route("/task-5/manufacturer", name="task5_manufacturer")
+   * @Route("/json/task-5/manufacturer", name="task5_manufacturer")
    */
   public function manufacturer() {
     /** @var $connection \Doctrine\DBAL\Connection */

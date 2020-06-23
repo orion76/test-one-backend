@@ -6,15 +6,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use function is_array;
-use function is_numeric;
-use function is_string;
 
 class Task7Controller extends AbstractController {
 
   use RenderTableTrait;
 
   /**
-   * @Route("/task-7", name="task7")
+   * @Route("/json/task-7", name="task7")
    */
   public function index(Request $request) {
     $files = $request->files->get('files');

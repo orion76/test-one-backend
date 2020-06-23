@@ -10,7 +10,7 @@ class Task6Controller extends AbstractController {
   use RenderTableTrait;
 
   /**
-   * @Route("/task-6", name="task6")
+   * @Route("/json/task-6", name="task6")
    */
   public function index() {
     /** @var $connection \Doctrine\DBAL\Connection */
